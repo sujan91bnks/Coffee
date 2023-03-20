@@ -9,8 +9,9 @@
 <body>
     <div class = 'big_container'>
         <!-- header only -->
-        <div class="header">
-            <div class="logo" style ="color:rgb(56, 4, 4)">Cf</div>
+        <div id="header">
+             <button class="logo" id = "leftButton" style ="color:rgb(56, 4, 4)">Cf</button>
+           
             <a href="philsophy.html" style = "text-decoration: none;"><div class="top">PHILOSOPHY</div></a>
             <div class="top">LOCATION</div>
             <div class="top" onclick="buy()">MENU</div>
@@ -23,9 +24,18 @@
         </div>
 
         <div class="btn">
-             <a href="product.html"><button class = 'btnInside'>Order Now!!</button></a>
+             <a href="product.html"><button class = 'btnInside' onClick = 'buy()'>Order Now!!</button></a>
+        </div>
+        <div id = 'popUp'>
+            <text>
+
+                <span>Location : </span>  120 Bloomfield Caldwell <br>
+                <span>Todays Special :</span>  Milk Coffee
+            </text>
+
         </div>
     </div>
     
 </body>
+<script src = 'script.js'></script>
 </html>

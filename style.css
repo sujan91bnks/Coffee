@@ -2,6 +2,7 @@
 
 body{
     margin:0;
+    padding:0;
 }
 .big_container{
     margin:0;
@@ -13,7 +14,7 @@ body{
     opacity:0.98;
     /* background-position: center;  */
 }
-.header{
+#header{
     display: flex;
     color:green;
     flex-direction: row
@@ -35,9 +36,11 @@ body{
 .logo{
     color:rgb(244, 179, 179);
     margin-top: 20px;
+    margin-left:15px;
+    margin-bottom: 5px;
     font-weight:bold;
     font-size: 60px;
-    width:40%;
+    width:20%;
     justify-content: center;
     align-items:center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -84,4 +87,27 @@ button:hover{
 button:active{
     background-color: rgb(185, 185, 250);
     border-color: rgb(185,185,250);
+}
+
+.glassOnion{
+    background-color: aqua;
+    font-size: medium;
+}
+
+#popUp{
+    display:none;
+    position:absolute;
+    background-color: white;
+    width:300px;
+    height:200px;
+    padding:40px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    font-size:large;
+    top: 50%;
+    left:50%;
+}
+span{
+    font-weight: bold;
 }
